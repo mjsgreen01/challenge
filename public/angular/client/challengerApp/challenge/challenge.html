@@ -10,7 +10,7 @@
 
 <div class="challenge-info-container">
   <div class="challenge-details">
-    <div class="challenge-creator pull-right">
+    <div class="challenge-creator pull-right hidden-xs">
       <h4 class="text-center">Creator info</h4>
       <img class="pull-left" ng-src="{{creator.profile_image}}">
       <span class="challenge-creator-name">
@@ -37,15 +37,15 @@
       </span>
     </div>
   </div>
-  <div class="challenge-comment-container col-xs-12">
+  <div class="challenge-comment-container col-lg-12">
     <h3>Comments</h3>
     <div class="challenge-comment-list">
       <div class="challenge-comment-item" ng-repeat="comment in comments">
-        <div class="challenge-comment-profile col-xs-3">
+        <div class="challenge-comment-profile col-lg-3 col-xs-1 col-sm-3">
           <img ng-src="{{comment.user.profile_image}}">
-          {{user.first_name}} {{user.last_name}}
+          <span class="hidden-xs">{{comment.user.first_name}} {{comment.user.last_name}}</span>
         </div>
-        <div class="challenge-comment-text-container pull-right col-xs-9">
+        <div class="challenge-comment-text-container pull-right col-lg-9 col-xs-11 col-sm-9">
           <small class="challenge-comment-date text-muted">{{comment.date_created|date:'MMM dd, yyyy hh:mm a:'}} </small>
           <span class="challenge-comment-text">{{comment.text}}</span>
         </div>
