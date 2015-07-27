@@ -16,7 +16,8 @@
 <body ng-app="challengeApp" ng-controller='ChallengeAppController'>
 
   <!-- NAVIGATION -->
-  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbarContain">
+  <nav class="navbar navbar-inverse container" role="navigation">
     <div class="navbar-header">
       <a class="navbar-brand" ui-sref="challenge_public">DUEL</a>
     </div>
@@ -32,6 +33,7 @@
         <li><a ui-sref="signin">Login</a></li>
       </ul>
     </nav>
+  </div>
 
     <!-- MAIN CONTENT -->
     <div class="container">

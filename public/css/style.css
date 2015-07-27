@@ -17,9 +17,9 @@
   color: white;
 }
 
-.navbar-inverse {
+.navbar-inverse, .navbarContain {
  background-color: #133D74 ;
-
+ border-color: #133D74 ;
 }
 
 .navbar.navbar-inverse .navbar-nav>li>a{
