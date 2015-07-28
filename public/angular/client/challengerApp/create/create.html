@@ -1,22 +1,24 @@
 <div class='center-block'>
-  <div id='container' class="createForm createFormTitle">
-    Create a Challenge
-  </div>
   <div id='container' class="createForm">
+    <div class="createFormTitle">
+      Create a Challenge
+    </div>
     <form novalidate>
-      <div class="form-group">
+      <div class="form-group input-field">
         <label for="challenge-title">Title:</label>
         <input class="form-control" type="text" id="challenge-title" ng-model="challengeInfo.title">
       </div>
-      <div class="form-group">
+      <div class="form-group input-field">
         <label for="challenge-message">Description:</label>
         <input class="form-control" type="text" id="challenge-message" ng-model="challengeInfo.message">
       </div>
       <div class="form-group">
-        <label for="participant-select">Add participants:</label>
-        <select class="form-control" ng-model="selectedParticipant" ng-options="user.first_name+' '+user.last_name for user in allUsers">
-          <option value="">-----</option>
-        </select>
+        <div class="input-field">
+          <label for="participant-select">Add participants:</label>
+          <select class="form-control" ng-model="selectedParticipant" ng-options="user.first_name+' '+user.last_name for user in allUsers">
+            <option value=""></option>
+          </select>
+        </div>
         <button type="button" class="btn btn-success addPart" ng-click="addParticipant()">Add</button>
         <div class="participant-list">
           <div class="participant-list-item" ng-repeat="participant in challengeInfo.participants">
@@ -24,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group input-field">
         <label for="challenge-wager">Wager:</label>
         <input class="form-control" type="text" id="challenge-wager" ng-model="challengeInfo.wager">
       </div>
