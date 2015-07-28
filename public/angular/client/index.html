@@ -4,11 +4,14 @@
 
   <!-- CSS (load bootstrap) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- JS (load angular, ui-router, and our custom js file) -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <script src="angular/client/challengerApp/app.js"></script>
 </head>
 
@@ -16,9 +19,12 @@
 <body ng-app="challengeApp" ng-controller='ChallengeAppController'>
 
   <!-- NAVIGATION -->
-  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbarContain">
+  <nav class="navbar navbar-inverse container" role="navigation">
     <div class="navbar-header">
-      <a class="navbar-brand" ui-sref="challenge_public">DUEL</a>
+      <a class="navbar-brand" ui-sref="challenge_public">
+        <img src="../img/DuelLogoText-01.png">
+      </a>
     </div>
     <ul class="nav navbar-nav">
       <li><a ui-sref="challenge_list">Challenge</a></li>
@@ -32,6 +38,7 @@
         <li><a ui-sref="signin">Login</a></li>
       </ul>
     </nav>
+  </div>
 
     <!-- MAIN CONTENT -->
     <div class="container">

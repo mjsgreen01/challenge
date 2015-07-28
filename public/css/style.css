@@ -5,6 +5,11 @@
 
 }
 
+.navbar{
+  min-height: 62px;
+  padding-top: 5px;
+}
+
 .navbar-brand {
  font-size: 30px;
 }
@@ -14,12 +19,12 @@
 }
 
 .navbar-inverse .navbar-header .navbar-brand {
-  color: white;
+  padding: 5px 15px;
 }
 
-.navbar-inverse {
+.navbar-inverse, .navbarContain {
  background-color: #133D74 ;
-
+ border-color: #133D74 ;
 }
 
 .navbar.navbar-inverse .navbar-nav>li>a{
@@ -42,6 +47,9 @@
  color: white;
 }
 
+.challenge-list-details, .challenge-participant-list{
+  display: inline-block;
+}
 
 .challenge-participant-list {
  width: 25%;
@@ -60,6 +68,11 @@
 
 
 }
+
+challenge-table table{
+  margin-top: 30px;
+}
+
 .challenge-details .challenge-creator {
  width: 120px;
 }
@@ -136,13 +149,17 @@ label {
  font-size: 18px;
 }
 
+.createForm .input-field label.active{
+  color:#26a69a;
+}
+
 .createForm {
  width: 75%;
  border-style: solid;
  border-width: 3px;
  border-radius: 20px;
  padding: 15px;
- background-color: #d3d3d3 ;
+ background-color: #E8E8E8 ;
  margin: 0 auto;
 }
 
@@ -150,12 +167,14 @@ label {
  margin-bottom: 10px;
  text-align: center;
  font-size: 30px;
+  font-weight: 500;
 }
 
 .center-block {
  width: 800px;
  margin-left: auto;
  margin-right: auto;
+ margin-top: 30px;
  display: block;
 }
 
